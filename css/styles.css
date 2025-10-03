@@ -1,52 +1,37 @@
 /* กำหนดรูปแบบหลักของตาราง */
 .table {
-    /* จัดขอบเขตของตารางให้ดูเรียบร้อย */
-    border-collapse: collapse;
-    /* เพิ่มขอบมนเล็กน้อยรอบตาราง */
-    border-radius: 8px;
-    /* ซ่อนขอบมนที่เกินออกมา */
-    overflow: hidden;
-    /* กำหนดฟอนต์ให้ดูทันสมัย */
-    font-family: Arial, sans-serif;
-    /* เงาเบาๆ ให้ตารางดูมีมิติ */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    border-collapse: collapse; /* จัดขอบเขตของตารางให้ดูเรียบร้อย */
+    border-radius: 8px; /* เพิ่มขอบมนเล็กน้อยรอบตาราง */
+    overflow: hidden; /* ซ่อนขอบมนที่เกินออกมา */
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้ดูทันสมัย */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* เงาเบาๆ ให้ตารางดูมีมิติ */
     margin: auto;
 }
 
 /* กำหนดรูปแบบของหัวตาราง (<thead>) */
 thead {
-    /* ใช้สีพื้นหลังที่โดดเด่น */
     background-color: #3f51b5; /* สีน้ำเงินเข้ม */
-    /* กำหนดสีตัวอักษรเป็นสีขาว */
-    color: rgb(221, 221, 221); 
+    color: rgb(221, 221, 221); /* กำหนดสีตัวอักษรเป็นสีขาว */
 }
 
 /* กำหนดรูปแบบของเซลล์หัวตาราง (<th>) */
 th {
-    /* เพิ่มช่องว่างภายในเซลล์ */
-    padding: 12px 15px; 
-    /* จัดข้อความให้อยู่ตรงกลาง */
-    text-align: left; 
-    /* ทำให้เป็นตัวพิมพ์ใหญ่ */
-    text-transform: uppercase; 
-    /* ปรับขนาดตัวอักษร */
-    font-size: 14px;
+    padding: 12px 15px; /* เพิ่มช่องว่างภายในเซลล์ */
+    text-align: left; /* จัดข้อความให้อยู่ตรงกลาง */
+    text-transform: uppercase; /* ทำให้เป็นตัวพิมพ์ใหญ่ */
+    font-size: 14px; /* ปรับขนาดตัวอักษร */
 }
 
 /* กำหนดรูปแบบของเซลล์ข้อมูล (<td>) */
 td {
-    /* เพิ่มช่องว่างภายในเซลล์ */
-    padding: 12px 15px;
-    /* เพิ่มเส้นแบ่งบางๆ ระหว่างแถว */
-    border-bottom: 1px solid #ddd; 
+    padding: 12px 15px;/* เพิ่มช่องว่างภายในเซลล์ */
+    border-bottom: 1px solid #ddd; /* เพิ่มเส้นแบ่งบางๆ ระหว่างแถว */
 }
 
 /* กำหนดรูปแบบเมื่อนำเมาส์ไปชี้ที่แถว (Hover effect) */
 .tr:hover {
-    /* เมื่อชี้จะเปลี่ยนสีพื้นหลังให้ดูโดดเด่น */
-    background-color: #ffffff;
-    /* ทำให้การเปลี่ยนสีดูนุ่มนวลขึ้น */
-    transition: background-color 0.3s ease;
+    background-color: #ffffff; /* เมื่อชี้จะเปลี่ยนสีพื้นหลังให้ดูโดดเด่น */
+    transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนสีอย่างนุ่มนวล */
 }
 
 /* กำหนดรูปแบบแถวสลับสี (Stripe effect) เพื่อให้อ่านง่ายขึ้น */
@@ -58,6 +43,8 @@ tbody tr:nth-child(even) {
 tbody tr:last-child td {
     border-bottom: none;
 }
+
+
 p {
     text-align: justify;
     font-family: 'Arial', sans-serif;
